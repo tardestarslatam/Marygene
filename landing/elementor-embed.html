@@ -1,14 +1,10 @@
 <!-- =======================================================
      47 FORMATOS VIRALES — Bloque Elementor (HTML widget)
-     Cómo usar en Elementor:
      1. Edita la página con Elementor
      2. Arrastra el widget "HTML"
      3. Pega TODO el contenido de este archivo
-     4. Sube tu imagen hero a la Media Library
-     5. Reemplaza assets/hero-kinetic.jpg por la URL absoluta
-     6. Actualiza la página
-     Nota: Tailwind viene con preflight desactivado
-     para no romper los estilos del tema de WordPress.
+     4. Sube tu imagen hero a la Media Library y reemplaza
+        assets/hero-kinetic.jpg por la URL absoluta
      ======================================================= -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -210,6 +206,21 @@
 /* Kinetic CTA custom */
 .mg-kinetic__cta{text-decoration:none}
 .mg-kinetic__cta:hover{background:#ff8633}
+
+/* Frame + image — explicit sizing so it fills the square on all browsers */
+.mg-kinetic__frame{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  display:block;
+}
+.mg-kinetic__img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  z-index:10;
+}
 
 /* ================= BUTTONS ================= */
 .mg-btn{
@@ -585,12 +596,12 @@
       <div class="relative w-full h-full min-h-[450px] md:min-h-[600px] flex items-center justify-center lg:justify-end">
         <div class="relative z-20 w-full max-w-lg aspect-square overflow-visible group transition-all duration-700">
           <div class="absolute inset-0 kinetic-neon-aura rounded-[2rem] transition-all duration-700 group-hover:scale-105"></div>
-          <div class="relative w-full h-full overflow-hidden rounded-[2rem] border border-primary/20 shadow-2xl bg-[#0a0e14]">
+          <div class="mg-kinetic__frame absolute inset-0 overflow-hidden rounded-[2rem] border border-primary/20 shadow-2xl bg-[#0a0e14]">
             <!-- Hero image: drop your file at assets/hero-kinetic.jpg to replace the fallback -->
-            <img alt="47 Formatos Virales" class="w-full h-full object-cover relative z-10"
+            <img alt="47 Formatos Virales" class="mg-kinetic__img"
                  src="assets/hero-kinetic.jpg"
                  onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/aida/ADBb0ujEqjOLjtD5FhVgQ1jX92MovrSO45UIyK96zY7lU9vGeYZQC979ZJRFoQtiUlGhTpXVCakFvYwQ0P3ZZwlqCRF9whVk2XcnubCXFdaY8oPQPDP0vNMmKZPmvTwIhzszN4jZnzxQIFUR-Wl_1YMuQAAe79bwuO7In9zp_YsDR-GqIOo9DJSGBeVBqc8l6-Z0NjPCoUtPX612a8q0937yICIsWFx4CIqPWIfbVsl-4RYSmQ-xEJX6JmqzIIoqymMY4m7YTkEng15B-A'"/>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-20 pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-20 pointer-events-none"></div>
             <div class="absolute inset-0 bg-primary/5 mix-blend-overlay z-20 pointer-events-none"></div>
           </div>
         </div>

@@ -160,6 +160,21 @@
 .mg-kinetic__cta{text-decoration:none}
 .mg-kinetic__cta:hover{background:#ff8633}
 
+/* Frame + image — explicit sizing so it fills the square on all browsers */
+.mg-kinetic__frame{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  display:block;
+}
+.mg-kinetic__img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  z-index:10;
+}
+
 /* ================= BUTTONS ================= */
 .mg-btn{
   display:inline-flex;align-items:center;gap:10px;justify-content:center;
