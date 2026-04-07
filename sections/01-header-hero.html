@@ -1,0 +1,508 @@
+<!-- =========================================================
+     SECCIÓN 01 — HEADER + HERO
+     Montar en Elementor como UN container "section" full-width.
+     Dentro: 2 sub-containers (header / hero).
+     ========================================================= -->
+
+<section class="mg-section mg-hero">
+
+  <!-- Fondos decorativos -->
+  <div class="mg-hero__bg">
+    <div class="mg-bg-grid"></div>
+    <div class="mg-bg-orb mg-bg-orb--orange"></div>
+    <div class="mg-bg-orb mg-bg-orb--dark"></div>
+    <div class="mg-hero__noise"></div>
+  </div>
+
+  <!-- =========== HEADER =========== -->
+  <header class="mg-header">
+    <div class="mg-container mg-header__inner">
+
+      <a href="#" class="mg-header__logo" aria-label="Logo">
+        <!-- ESPACIO PARA LOGO (reemplazar por <img src="logo.svg">) -->
+        <div class="mg-img-placeholder mg-logo-ph">
+          <span>LOGO</span>
+        </div>
+      </a>
+
+      <nav class="mg-header__nav" aria-label="Principal">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#incluye">Qué incluye</a>
+        <a href="#precio">Precio</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a href="#precio" class="mg-header__cta">
+        Quiero acceso
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+    </div>
+  </header>
+
+  <!-- =========== HERO =========== -->
+  <div class="mg-container mg-hero__inner">
+
+    <!-- Badge superior con flecha -->
+    <div class="mg-hero__badge">
+      <svg class="mg-hero__arrow" width="46" height="46" viewBox="0 0 64 64" fill="none">
+        <path d="M10 30 Q 30 6 54 26" stroke="#FF6A1F" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M46 18 L 56 28 L 46 32" stroke="#FF6A1F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <span>QUIERO VENDER MÁS CON CONTENIDO QUE SÍ FUNCIONA</span>
+    </div>
+
+    <!-- Headline principal -->
+    <h1 class="mg-hero__title">
+      Accede a la <span class="mg-hl">biblioteca de 47 formatos virales</span>
+      que tus competidores ya están usando para vender.
+    </h1>
+
+    <p class="mg-hero__subtitle">
+      Plantillas listas, probadas y editables para crear creativos que detienen el scroll,
+      generan clics y convierten en cliente — sin perder horas frente a una pantalla en blanco.
+    </p>
+
+    <!-- Bullets de valor -->
+    <ul class="mg-hero__bullets">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        47 formatos validados con campañas reales
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        Editables en Canva, CapCut o Premiere
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        Listos para Meta Ads, TikTok e Instagram
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        Acceso inmediato + actualizaciones gratuitas
+      </li>
+    </ul>
+
+    <!-- Bloque de precio + CTA -->
+    <div class="mg-hero__offer">
+      <div class="mg-hero__price">
+        <span class="mg-hero__price-old">$39.90</span>
+        <span class="mg-hero__price-new">$19.90<small>USD</small></span>
+        <span class="mg-hero__price-tag">-50% HOY</span>
+      </div>
+      <a href="#precio" class="mg-btn-cta mg-hero__cta-main">
+        QUIERO ACCESO INMEDIATO
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <p class="mg-hero__guarantee">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1FD96B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        Pago 100% seguro · Garantía de 7 días
+      </p>
+    </div>
+
+    <!-- Mockup / visual lateral del hero -->
+    <div class="mg-hero__visual">
+      <!-- ESPACIO PARA MOCKUP PRINCIPAL DEL HERO (mockup móvil con formatos) -->
+      <div class="mg-img-placeholder mg-hero__visual-ph">
+        <span>ESPACIO PARA MOCKUP PRINCIPAL · MÓVIL CON FORMATOS</span>
+      </div>
+      <!-- Tarjeta flotante 1 -->
+      <div class="mg-hero__chip mg-hero__chip--1">
+        <div class="mg-hero__chip-dot"></div>
+        +47 formatos virales
+      </div>
+      <!-- Tarjeta flotante 2 -->
+      <div class="mg-hero__chip mg-hero__chip--2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF6A1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Acceso instantáneo
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Línea de marca inferior -->
+  <div class="mg-hero__marquee" aria-hidden="true">
+    <div class="mg-hero__marquee-track">
+      <span>FORMATOS VALIDADOS</span><span>•</span>
+      <span>META ADS READY</span><span>•</span>
+      <span>EDITABLES EN CANVA</span><span>•</span>
+      <span>+10.000 CREADORES</span><span>•</span>
+      <span>FORMATOS VALIDADOS</span><span>•</span>
+      <span>META ADS READY</span><span>•</span>
+      <span>EDITABLES EN CANVA</span><span>•</span>
+      <span>+10.000 CREADORES</span><span>•</span>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CSS DE LA SECCIÓN 01
+     Pegar en "Custom CSS" del container o en el bloque global.
+     ========================================================= -->
+<style>
+.mg-hero{
+  position:relative;
+  background:var(--bg-black);
+  overflow:hidden;
+  padding-bottom:60px;
+}
+
+/* Fondos decorativos */
+.mg-hero__bg{position:absolute;inset:0;z-index:0;}
+.mg-bg-orb--orange{
+  top:-180px;left:-120px;
+  background:radial-gradient(circle,#FF6A1F 0%,transparent 60%);
+}
+.mg-bg-orb--dark{
+  bottom:-220px;right:-160px;
+  width:700px;height:700px;
+  background:radial-gradient(circle,#1FD96B 0%,transparent 60%);
+  opacity:.18;
+}
+.mg-hero__noise{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse at top,rgba(255,106,31,.08),transparent 60%);
+}
+
+/* === Header === */
+.mg-header{
+  position:relative;
+  z-index:2;
+  padding:22px 0;
+  border-bottom:1px solid rgba(255,255,255,.04);
+  backdrop-filter:blur(8px);
+}
+.mg-header__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.mg-header__logo{display:block;}
+.mg-logo-ph{
+  width:140px;
+  height:42px;
+  font-size:11px;
+}
+.mg-header__nav{
+  display:flex;
+  gap:34px;
+}
+.mg-header__nav a{
+  color:var(--text-soft);
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+  position:relative;
+  transition:color .2s ease;
+}
+.mg-header__nav a::after{
+  content:"";
+  position:absolute;
+  left:0;bottom:-6px;
+  width:0;height:2px;
+  background:var(--orange);
+  transition:width .25s ease;
+}
+.mg-header__nav a:hover{color:var(--text-white);}
+.mg-header__nav a:hover::after{width:100%;}
+
+.mg-header__cta{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:11px 20px;
+  border:1px solid var(--border-subtle);
+  background:rgba(255,255,255,.03);
+  color:var(--text-white);
+  font-size:13px;
+  font-weight:600;
+  border-radius:10px;
+  text-decoration:none;
+  transition:all .25s ease;
+}
+.mg-header__cta:hover{
+  border-color:var(--orange);
+  background:rgba(255,106,31,.08);
+  transform:translateY(-1px);
+}
+
+/* === Hero === */
+.mg-hero__inner{
+  position:relative;
+  z-index:1;
+  padding:80px 24px 20px;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:60px;
+  align-items:center;
+}
+
+.mg-hero__badge{
+  grid-column:1/-1;
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+  padding:10px 18px 10px 12px;
+  background:rgba(255,106,31,.08);
+  border:1px solid rgba(255,106,31,.25);
+  border-radius:100px;
+  width:fit-content;
+  margin-bottom:8px;
+  animation:mgFadeUp .6s ease both;
+}
+.mg-hero__badge span{
+  color:var(--orange-glow);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.mg-hero__arrow{
+  flex-shrink:0;
+  animation:mgFloat 3s ease-in-out infinite;
+}
+
+.mg-hero__title{
+  grid-column:1;
+  font-size:clamp(34px,4.6vw,60px);
+  font-weight:800;
+  margin-bottom:22px;
+  animation:mgFadeUp .7s ease .1s both;
+}
+.mg-hl{
+  background:linear-gradient(120deg,var(--orange) 0%,var(--orange-glow) 50%,#FFB07A 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  position:relative;
+}
+.mg-hl::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:-6px;
+  height:3px;
+  background:linear-gradient(90deg,transparent,var(--orange),transparent);
+  border-radius:2px;
+  opacity:.6;
+}
+
+.mg-hero__subtitle{
+  grid-column:1;
+  font-size:17px;
+  color:var(--text-soft);
+  margin-bottom:30px;
+  max-width:560px;
+  animation:mgFadeUp .7s ease .2s both;
+}
+
+.mg-hero__bullets{
+  grid-column:1;
+  list-style:none;
+  padding:0;
+  margin:0 0 38px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px 26px;
+  animation:mgFadeUp .7s ease .3s both;
+}
+.mg-hero__bullets li{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:15px;
+  color:var(--text-soft);
+}
+.mg-hero__bullets li svg{
+  width:20px;height:20px;
+  padding:4px;
+  background:rgba(31,217,107,.12);
+  border:1px solid rgba(31,217,107,.3);
+  color:var(--green-cta);
+  border-radius:6px;
+  flex-shrink:0;
+}
+
+.mg-hero__offer{
+  grid-column:1;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:24px;
+  padding:24px;
+  background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0));
+  border:1px solid var(--border-subtle);
+  border-radius:var(--radius-md);
+  animation:mgFadeUp .7s ease .4s both;
+}
+.mg-hero__price{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.mg-hero__price-old{
+  color:var(--text-muted);
+  text-decoration:line-through;
+  font-size:18px;
+  font-family:var(--font-display);
+}
+.mg-hero__price-new{
+  color:var(--text-white);
+  font-size:42px;
+  font-family:var(--font-display);
+  font-weight:700;
+  line-height:1;
+  display:flex;
+  align-items:flex-start;
+  gap:4px;
+}
+.mg-hero__price-new small{
+  font-size:14px;
+  color:var(--text-soft);
+  font-weight:500;
+  margin-top:6px;
+}
+.mg-hero__price-tag{
+  padding:6px 12px;
+  background:rgba(255,106,31,.15);
+  border:1px solid var(--orange);
+  color:var(--orange-glow);
+  font-size:11px;
+  font-weight:700;
+  border-radius:6px;
+  letter-spacing:.05em;
+}
+.mg-hero__cta-main{margin-left:auto;}
+
+.mg-hero__guarantee{
+  flex-basis:100%;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0;
+  font-size:13px;
+  color:var(--text-muted);
+}
+
+/* === Visual lateral === */
+.mg-hero__visual{
+  grid-column:2;
+  grid-row:2 / span 4;
+  position:relative;
+  align-self:stretch;
+  min-height:520px;
+  animation:mgFadeUp .8s ease .3s both;
+}
+.mg-hero__visual-ph{
+  height:100%;
+  min-height:520px;
+  border-radius:var(--radius-lg);
+  background:
+    radial-gradient(circle at 50% 30%,rgba(255,106,31,.18),transparent 60%),
+    var(--bg-elevated);
+  border:1px solid var(--border-subtle);
+}
+.mg-hero__visual-ph::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:inherit;
+  padding:1px;
+  background:linear-gradient(180deg,rgba(255,106,31,.4),transparent 40%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+}
+
+.mg-hero__chip{
+  position:absolute;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 14px;
+  background:rgba(23,23,28,.85);
+  backdrop-filter:blur(10px);
+  border:1px solid var(--border-subtle);
+  border-radius:12px;
+  font-size:12px;
+  font-weight:600;
+  color:var(--text-white);
+  box-shadow:0 20px 40px -20px rgba(0,0,0,.8);
+}
+.mg-hero__chip--1{
+  top:30px;left:-20px;
+  animation:mgFloat 4s ease-in-out infinite;
+}
+.mg-hero__chip--2{
+  bottom:60px;right:-20px;
+  animation:mgFloat 4s ease-in-out infinite .8s;
+}
+.mg-hero__chip-dot{
+  width:8px;height:8px;
+  background:var(--green-cta);
+  border-radius:50%;
+  box-shadow:0 0 10px var(--green-cta);
+  animation:mgPulse 1.5s ease-in-out infinite;
+}
+
+/* === Marquee inferior === */
+.mg-hero__marquee{
+  position:relative;
+  margin-top:60px;
+  padding:18px 0;
+  border-top:1px solid var(--border-subtle);
+  border-bottom:1px solid var(--border-subtle);
+  overflow:hidden;
+  background:rgba(255,255,255,.015);
+}
+.mg-hero__marquee-track{
+  display:flex;
+  gap:36px;
+  white-space:nowrap;
+  animation:mgScroll 30s linear infinite;
+  font-family:var(--font-display);
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.12em;
+  color:var(--text-muted);
+}
+.mg-hero__marquee-track span:nth-child(odd){color:var(--text-white);}
+@keyframes mgScroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width:1024px){
+  .mg-hero__inner{
+    grid-template-columns:1fr;
+    gap:40px;
+    padding-top:60px;
+  }
+  .mg-hero__visual{
+    grid-column:1;
+    grid-row:auto;
+    min-height:420px;
+  }
+  .mg-hero__visual-ph{min-height:420px;}
+  .mg-header__nav{display:none;}
+}
+
+@media (max-width:640px){
+  .mg-hero__inner{padding:40px 20px 20px;}
+  .mg-hero__bullets{grid-template-columns:1fr;}
+  .mg-hero__offer{flex-direction:column;align-items:flex-start;}
+  .mg-hero__cta-main{margin-left:0;width:100%;}
+  .mg-hero__price-new{font-size:36px;}
+  .mg-hero__visual{min-height:340px;}
+  .mg-hero__visual-ph{min-height:340px;}
+  .mg-hero__chip--1{left:10px;}
+  .mg-hero__chip--2{right:10px;}
+  .mg-header__cta{padding:9px 14px;font-size:12px;}
+  .mg-logo-ph{width:110px;height:36px;}
+}
+</style>
