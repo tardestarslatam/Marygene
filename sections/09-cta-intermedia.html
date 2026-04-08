@@ -1,0 +1,440 @@
+<!-- =========================================================
+     SECCIÓN 09 — CTA INTERMEDIA  (AUTOCONTENIDA)
+     Botón gigante "ACCESO INMEDIATO" con urgencia y glow.
+     Pegar tal cual en un widget HTML de Elementor.
+     ========================================================= -->
+
+<section class="mg-midcta">
+
+  <!-- Fondos decorativos -->
+  <div class="mg-midcta__bg">
+    <div class="mg-midcta__grid"></div>
+    <div class="mg-midcta__orb mg-midcta__orb--orange"></div>
+    <div class="mg-midcta__orb mg-midcta__orb--orange2"></div>
+    <div class="mg-midcta__rays"></div>
+  </div>
+
+  <div class="mg-midcta__container">
+
+    <!-- Caja principal -->
+    <div class="mg-midcta__box">
+
+      <!-- Gradient border wrapper -->
+      <div class="mg-midcta__border"></div>
+
+      <!-- Contenido -->
+      <div class="mg-midcta__inner">
+
+        <!-- Tag superior -->
+        <div class="mg-midcta__tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          OFERTA ACTIVA
+        </div>
+
+        <!-- Headline -->
+        <h2 class="mg-midcta__title">
+          Deja de perder ventas.<br/>
+          <span class="mg-midcta__hl">Entra ahora</span> a la biblioteca.
+        </h2>
+
+        <p class="mg-midcta__sub">
+          Acceso inmediato después del pago · Sin esperas · Sin procesos largos.
+          Todo a tu correo en menos de 60 segundos.
+        </p>
+
+        <!-- Botón CTA GIGANTE -->
+        <a href="#precio" class="mg-midcta__btn">
+          <span class="mg-midcta__btn-glow"></span>
+          <span class="mg-midcta__btn-text">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+            ACCESO INMEDIATO
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Trust line -->
+        <div class="mg-midcta__trust">
+          <div class="mg-midcta__trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1FD96B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+            Pago 100% seguro
+          </div>
+          <div class="mg-midcta__trust-sep"></div>
+          <div class="mg-midcta__trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1FD96B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+            Garantía 7 días
+          </div>
+          <div class="mg-midcta__trust-sep"></div>
+          <div class="mg-midcta__trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1FD96B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Acceso inmediato
+          </div>
+        </div>
+
+        <!-- Urgencia timer -->
+        <div class="mg-midcta__urgency">
+          <div class="mg-midcta__urgency-dot"></div>
+          <span>
+            <strong>Oferta por tiempo limitado</strong> · el precio sube en las próximas horas
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================================
+     CSS AUTOCONTENIDO — SECCIÓN 09
+     ========================================================= -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+.mg-midcta,
+.mg-midcta *,
+.mg-midcta *::before,
+.mg-midcta *::after{
+  box-sizing:border-box;
+}
+.mg-midcta{
+  position:relative !important;
+  display:block !important;
+  width:100% !important;
+  background:#0A0A0B !important;
+  background-color:#0A0A0B !important;
+  background-image:
+    radial-gradient(ellipse 80% 70% at 50% 50%,rgba(255,106,31,.16),transparent 65%) !important;
+  color:#B8B8C2 !important;
+  font-family:'Inter',system-ui,sans-serif !important;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  padding:100px 0;
+  overflow:hidden;
+  isolation:isolate;
+}
+.mg-midcta h2{
+  font-family:'Space Grotesk',system-ui,sans-serif;
+  color:#FFFFFF;
+  margin:0;
+  letter-spacing:-.02em;
+  line-height:1.15;
+}
+.mg-midcta p{margin:0;color:#B8B8C2;}
+.mg-midcta a{text-decoration:none;}
+
+/* ---------- Fondos ---------- */
+.mg-midcta__bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+}
+.mg-midcta__grid{
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 25%,transparent 75%);
+  mask-image:radial-gradient(ellipse at center,#000 25%,transparent 75%);
+}
+.mg-midcta__orb{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(130px);
+  pointer-events:none;
+}
+.mg-midcta__orb--orange{
+  top:-200px;left:50%;
+  transform:translateX(-50%);
+  width:900px;height:600px;
+  background:radial-gradient(circle,#FF6A1F 0%,transparent 60%);
+  opacity:.35;
+}
+.mg-midcta__orb--orange2{
+  bottom:-200px;left:50%;
+  transform:translateX(-50%);
+  width:700px;height:500px;
+  background:radial-gradient(circle,#FF8A3D 0%,transparent 60%);
+  opacity:.22;
+}
+.mg-midcta__rays{
+  position:absolute;
+  inset:0;
+  background:
+    conic-gradient(from 90deg at 50% 50%,
+      transparent 0deg,
+      rgba(255,106,31,.04) 30deg,
+      transparent 60deg,
+      rgba(255,106,31,.04) 90deg,
+      transparent 120deg,
+      rgba(255,106,31,.04) 150deg,
+      transparent 180deg,
+      rgba(255,106,31,.04) 210deg,
+      transparent 240deg,
+      rgba(255,106,31,.04) 270deg,
+      transparent 300deg,
+      rgba(255,106,31,.04) 330deg,
+      transparent 360deg);
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 20%,transparent 70%);
+  mask-image:radial-gradient(ellipse at center,#000 20%,transparent 70%);
+  animation:mgCtaRays 40s linear infinite;
+}
+
+.mg-midcta__container{
+  position:relative;
+  z-index:1;
+  width:100%;
+  max-width:960px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+/* ---------- Box principal ---------- */
+.mg-midcta__box{
+  position:relative;
+  padding:60px 50px;
+  background:
+    radial-gradient(ellipse at top,rgba(255,106,31,.08),transparent 60%),
+    linear-gradient(180deg,#14141A,#0F0F14);
+  border-radius:32px;
+  text-align:center;
+  overflow:hidden;
+  box-shadow:
+    0 60px 120px -40px rgba(255,106,31,.35),
+    0 0 0 1px rgba(255,106,31,.15),
+    inset 0 1px 0 rgba(255,255,255,.05);
+}
+.mg-midcta__border{
+  position:absolute;
+  inset:0;
+  border-radius:32px;
+  padding:1.5px;
+  background:linear-gradient(130deg,
+    rgba(255,106,31,.6),
+    rgba(255,138,61,.2) 30%,
+    rgba(255,106,31,.05) 60%,
+    rgba(255,138,61,.4));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+}
+.mg-midcta__inner{
+  position:relative;
+  z-index:2;
+}
+
+/* ---------- Tag ---------- */
+.mg-midcta__tag{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 16px;
+  background:linear-gradient(180deg,rgba(255,106,31,.18),rgba(255,106,31,.08));
+  border:1px solid rgba(255,106,31,.45);
+  border-radius:100px;
+  color:#FF8A3D;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin-bottom:26px;
+  box-shadow:0 10px 30px -12px rgba(255,106,31,.4);
+}
+
+/* ---------- Title ---------- */
+.mg-midcta__title{
+  font-size:clamp(32px,4.4vw,58px);
+  font-weight:800;
+  margin-bottom:18px !important;
+}
+.mg-midcta__hl{
+  background:linear-gradient(120deg,#FF6A1F 0%,#FF8A3D 40%,#FFB07A 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  display:inline-block;
+  position:relative;
+}
+.mg-midcta__hl::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:-6px;
+  height:3px;
+  background:linear-gradient(90deg,transparent,#FF6A1F,transparent);
+  border-radius:2px;
+  opacity:.7;
+}
+.mg-midcta__sub{
+  font-size:16.5px;
+  max-width:580px;
+  margin:0 auto 42px !important;
+}
+
+/* ---------- Botón GIGANTE ---------- */
+.mg-midcta__btn{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px 52px;
+  background:linear-gradient(180deg,#1FD96B 0%,#14C25C 100%);
+  color:#04210E !important;
+  font-family:'Space Grotesk',system-ui,sans-serif;
+  font-weight:800;
+  font-size:20px;
+  letter-spacing:.04em;
+  border-radius:18px;
+  cursor:pointer;
+  overflow:hidden;
+  box-shadow:
+    0 20px 50px -15px rgba(31,217,107,.55),
+    0 0 0 1px rgba(31,217,107,.2),
+    inset 0 1px 0 rgba(255,255,255,.4);
+  transition:transform .3s ease,box-shadow .3s ease,filter .3s ease;
+  margin-bottom:32px;
+}
+.mg-midcta__btn::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);
+  transform:translateX(-120%);
+  transition:transform .7s ease;
+}
+.mg-midcta__btn-glow{
+  position:absolute;
+  inset:-40%;
+  background:radial-gradient(ellipse,rgba(31,217,107,.6),transparent 60%);
+  filter:blur(40px);
+  opacity:.5;
+  z-index:-1;
+  animation:mgCtaGlow 3s ease-in-out infinite;
+  pointer-events:none;
+}
+.mg-midcta__btn-text{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.mg-midcta__btn:hover{
+  transform:translateY(-3px) scale(1.02);
+  box-shadow:
+    0 30px 60px -15px rgba(31,217,107,.65),
+    0 0 0 1px rgba(31,217,107,.3),
+    inset 0 1px 0 rgba(255,255,255,.5);
+  filter:brightness(1.08);
+}
+.mg-midcta__btn:hover::before{transform:translateX(120%);}
+.mg-midcta__btn:active{transform:translateY(-1px) scale(1.01);}
+
+/* ---------- Trust ---------- */
+.mg-midcta__trust{
+  display:inline-flex;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-bottom:24px;
+}
+.mg-midcta__trust-item{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:13px;
+  font-weight:500;
+  color:#B8B8C2;
+}
+.mg-midcta__trust-sep{
+  width:3px;height:3px;
+  background:#6B6B78;
+  border-radius:50%;
+}
+
+/* ---------- Urgencia ---------- */
+.mg-midcta__urgency{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:11px 20px;
+  background:rgba(255,106,31,.08);
+  border:1px solid rgba(255,106,31,.3);
+  border-radius:100px;
+  font-size:12.5px;
+  color:#B8B8C2;
+}
+.mg-midcta__urgency strong{
+  color:#FF8A3D;
+  font-weight:700;
+}
+.mg-midcta__urgency-dot{
+  width:8px;height:8px;
+  background:#FF6A1F;
+  border-radius:50%;
+  box-shadow:0 0 10px #FF6A1F;
+  animation:mgCtaPulse 1.5s ease-in-out infinite;
+}
+
+/* ---------- Animaciones ---------- */
+@keyframes mgCtaPulse{
+  0%,100%{opacity:.5;transform:scale(1)}
+  50%{opacity:1;transform:scale(1.25)}
+}
+@keyframes mgCtaGlow{
+  0%,100%{opacity:.5;transform:scale(1)}
+  50%{opacity:.8;transform:scale(1.1)}
+}
+@keyframes mgCtaRays{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width:1024px){
+  .mg-midcta{padding:80px 0;}
+  .mg-midcta__box{padding:50px 36px;}
+}
+@media (max-width:640px){
+  .mg-midcta{padding:60px 0;}
+  .mg-midcta__box{
+    padding:40px 24px;
+    border-radius:24px;
+  }
+  .mg-midcta__title{font-size:28px;}
+  .mg-midcta__sub{font-size:15px;margin-bottom:32px !important;}
+  .mg-midcta__btn{
+    padding:20px 30px;
+    font-size:16px;
+    width:100%;
+    border-radius:14px;
+  }
+  .mg-midcta__btn-text{gap:10px;}
+  .mg-midcta__btn-text svg{width:18px;height:18px;}
+  .mg-midcta__trust{gap:10px;}
+  .mg-midcta__trust-item{font-size:12px;}
+  .mg-midcta__urgency{
+    font-size:11.5px;
+    padding:10px 16px;
+    text-align:left;
+  }
+}
+</style>
